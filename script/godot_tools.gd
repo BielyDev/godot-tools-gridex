@@ -56,7 +56,7 @@ func disabled_godot_tools() -> void:
 	GridExExtension.remove_node_in_bar(button, 0, 0)
 
 func create_window() -> void:
-	window = WindowManager.window_container(get_window(), "Godot Tools")
+	window = WindowManager.window_container(get_window(), title)
 	window.size_window(0.6)
 
 	var ok_button: Button = window.add_down_button("OK",_on_confirm)
